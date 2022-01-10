@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ede4d6;
+}
+/*Home page starts here*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  width: 99vw;
+  height: 200vh;
+}
+.header {
+  grid-area: 1/1/2/16;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+/*Logo it's here from all pages*/
+.logo {
+  grid-area: 1/2/3/3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo img {
+  height: 115px;
+  border-radius: 50%;
+}
+/*Nav starts here from all pages*/
+.navBar {
+  grid-area: 1/4/2/13;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #ede4d6;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+  float: left;
+}
+a {
+  display: block;
+  padding: 8px;
+  background-color: #fa9bad;
+  color: #403f35;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 20px;
+}
+/*Banner starts here, just for Home*/
+.banner {
+  grid-area: 3/2/8/13;
+  background-image: url("../images/bannerImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  opacity: 0.8;
+}
+.banner h1 {
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 5em;
+  font-weight: bold;
+  color: #403f35;
+  font-family: "Poppins", sans-serif;
+}
+.banner h2 {
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 3em;
+  color: #403f35;
+  font-family: "Poppins", sans-serif;
+}
+.banner button {
+  margin-top: 5vh;
+  margin-left: 36vw;
+  color: #403f35;
+  background-color: #fa9bad;
+  font-family: "Poppins", sans-serif;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 30px;
+}
+.banner a {
+  border-radius: 3px;
+}
+.banner button:hover {
+  transform: scaleY(1.5) scaleX(1.5);
+}
+/*Here starts our cards from Home*/
+.ctcSub1 {
+  grid-area: 9/2/14/5;
+  background-color: #fa9bad;
+  border-radius: 10px;
+  color: #403f35;
+  font-family: "Rubik", sans-serif;
+}
+.ctcSub1 h3 {
+  font-size: 2em;
+  padding: 10px;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+}
+.ctcSub1 img {
+  width: 22vw;
+  margin: 15px 0 0 6px;
+  border-radius: 10px;
+}
+.ctcSub1 img:hover {
+  transform: scaleY(1.2) scaleX(1.2);
+  cursor: pointer;
+}
+.ctcSub1 p {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.ctcSub2 {
+  grid-area: 9/6/14/9;
+  background-color: #ede4d6;
+  border-radius: 10px;
+  color: #403f35;
+  font-family: "Rubik", sans-serif;
+}
+
+.ctcSub2 h3 {
+  font-size: 2em;
+  padding: 10px;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+}
+.ctcSub2 img {
+  width: 22vw;
+  margin: 15px 0 0 6px;
+  border-radius: 10px;
+}
+.ctcSub2 img:hover {
+  transform: scaleY(1.2) scaleX(1.2);
+  cursor: pointer;
+}
+.ctcSub2 p {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.ctcSub3 {
+  grid-area: 9/10/14/13;
+  background-color: #fa9bad;
+  border-radius: 10px;
+  color: #403f35;
+  font-family: "Rubik", sans-serif;
+}
+.ctcSub3 h3 {
+  font-size: 2em;
+  padding: 10px;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+}
+.ctcSub3 img {
+  width: 22vw;
+  margin: 15px 0 0 6px;
+  border-radius: 10px;
+}
+.ctcSub3 img:hover {
+  transform: scaleY(1.2) scaleX(1.2);
+  cursor: pointer;
+}
+.ctcSub3 p {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.footer,
+.footerFlavours {
+  grid-area: 15/1/16/14;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.footerFlavours {
+  padding: 50px;
+}
+
+/*Here starts our Flavours page*/
+.flexbox {
+  grid-area: 3/2/16/13;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.subClass1,
+.subClass2,
+.subClass3 {
+  flex-basis: calc(33.33% - 50px);
+}
+
+.card,
+.card2 {
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.card {
+  background-color: #ede4d6;
+}
+.card2 {
+  background-color: #fa9bad;
+}
+.card h1,
+.card2 h1 {
+  font-size: 2em;
+  padding: 10px;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+  color: #403f35;
+  font-family: "Poppins", sans-serif;
+}
+
+.card img,
+.card2 img {
+  width: calc(100%);
+  border-radius: 10px;
+}
+.card img:hover,
+.card2 img:hover {
+  transform: scaleY(1.2) scaleX(1.2);
+  cursor: pointer;
+}
+.card p,
+.card2 p {
+  font-size: 1.2em;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+}
+/*Here starts our About us page*/
+.backgroundColour {
+  grid-area: 3/2/10/13;
+  background-color: #fa9bad;
+}
+.introductionAboutus {
+  grid-area: 5/3/8/7;
+}
+.introductionAboutus h1 {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+  color: #403f35;
+  font-family: "Poppins", sans-serif;
+}
+.introductionAboutus p {
+  font-size: 1.2em;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+}
+.bannerAboutus {
+  grid-area: 4/8/10/13;
+}
+.bannerAboutus img {
+  height: 70vh;
+  border-radius: 10px;
+  background-size: cover;
+}
+.bannerAboutus img:hover {
+  transform: scaleY(1.2) scaleX(1.2);
+  cursor: pointer;
+}
+.pAboutus {
+  grid-area: 10/2/15/13;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.pAboutus p {
+  font-size: 1.2em;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+  text-justify: inter-word;
+}
+/*Our FAQ starts here*/
+.grid-container-faq {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 99vw;
+  height: 200vh;
+}
+.form {
+  grid-area: 3/2/10/13;
+  background-color: #fa9bad;
+  font-size: 1.2em;
+  padding: 10px;
+  font-family: "Rubik", sans-serif;
+}
+.form h1 {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
+  border: solid #403f35 5px;
+  border-radius: 10px;
+  color: #403f35;
+  font-family: "Poppins", sans-serif;
+}
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #403f35;
+  top: -5px;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1em;
+  position: relative;
+  border-radius: 10px;
+}
+
+.styled-input label {
+  color: #403f35;
+  padding: 1.3em 30px 1em 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #ede4d6;
+  color: #403f35;
+  border-radius: 10px;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  padding: 7px 35px;
+  margin-left: 1vw;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #ede4d6;
+  color: #403f35;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-rows: repeat(23, 1fr);
+    height: 380vh;
+  }
+  .header {
+    display: block;
+  }
+  ul {
+    width: 70px;
+    display: inline;
+  }
+  li a {
+    display: block;
+    font-size: 1.9em;
+  }
+  .banner h1 {
+    font-size: 3em;
+    margin-top: 100px;
+  }
+  .banner h4 {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+  .banner button {
+    margin-left: 150px;
+    margin-top: 150px;
+  }
+  .ctcSub1 {
+    grid-area: 9/2/13/13;
+  }
+  .ctcSub1 img {
+    width: 75vw;
+    margin-left: 4vw;
+  }
+  .ctcSub2 {
+    grid-area: 14/2/18/13;
+  }
+  .ctcSub2 img {
+    width: 75vw;
+    margin-left: 4vw;
+  }
+  .ctcSub3 {
+    grid-area: 19/2/23/13;
+  }
+  .ctcSub3 img {
+    width: 75vw;
+    margin-left: 4vw;
+  }
+  .footer {
+    grid-area: 23/1/24/14;
+    margin-top: 50px;
+  }
+  .footerFlavours {
+    grid-area: 24/1/25/14;
+    margin-top: 300%;
+  }
+  .flexbox {
+    flex-direction: column;
+    height: 515vh;
+    margin-top: 55vh;
+  }
+  .introductionAboutus {
+    grid-area: 4/3/6/12;
+  }
+  .bannerAboutus {
+    grid-area: 6/3/12/12;
+  }
+  .backgroundColour {
+    grid-area: 3/2/11/13;
+  }
+  .pAboutus {
+    grid-area: 11/2/23/13;
+  }
+  .pAboutus p {
+    font-size: 1.7em;
+  }
+  .grid-container-faq {
+    display: block;
+    height: 150vh;
+  }
+  .form h1 {
+    border: none;
+  }
+  .styled-input,
+  textarea,
+  input {
+    width: 92%;
+  }
+  .submit-btn {
+    width: 97%;
+    float: none;
+    text-align: center;
+  }
+}
